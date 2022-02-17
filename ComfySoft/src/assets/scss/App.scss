@@ -1,0 +1,39 @@
+@import 'header';
+@import 'content';
+@import 'sidebar';
+@import 'cart';
+@import 'footer';
+body{
+    font-size: 61.2%;
+}
+header .header__cart .cart a .cart-container .cart-value{
+    position: absolute;
+    top: -5px;
+    right: -16px;
+    background: #ab7a5f;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    color: var(--clr-white);
+    padding: 12px;
+}
+
+header .nav .nav-item:hover{
+    border-bottom: 2px solid #c5a491;
+}
+.title{
+    background-color: #eaded7;
+    color: #453227;
+}
+.title a{
+    color: #795744;
+}
+a{
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+.cart{
+    .btn-return{
+        text-transform: uppercase;
+        background-color: #ab7a5f;
+        color: #eaded7;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    div.colors-cart{
+        width: 15px;
+        height: 15px;
+        border-radius: 4px;
+    }
+    div.total-price{
+        max-width: 350px;
+        height: auto;
+        border: 1px solid black;
+        padding: 20px;
+        
+    }
+    button{
+        &.btn-chekout{
+            padding: 8px;
+            width: -webkit-fill-available;
+            background-color: #ab7a5f;
+        }
+        &.btn-continue{
+            background-color: #ab7a5f;
+        }
+        &.btn-clear{
+            background-color: black;
+        }
+      
+    }
+    .footer{
+        position: absolute ;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,172 @@
+.content{
+    .product-item{
+        cursor: pointer;
+    }
+    
+    
+    li{
+    list-style-type: none;
+    button{
+        display: block;
+        margin: 0.25em 0.25rem;
+        padding: 0.25rem 0px;
+        text-transform: capitalize;
+        background: transparent;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-image: initial;
+        border-bottom: 1px solid transparent;
+        letter-spacing: 0.1rem;
+        color: #617d98;
+        cursor: pointer;
+        &.active{
+            :first-child:active{
+                border-color: #617d98 !important;
+                border-bottom: 1px solid !important;
+            }
+            border-color: #617d98 !important;
+            border-bottom: 1px solid !important;
+        }
+    }
+}
+.search-input{
+    padding: 0.5rem;
+    background: #f1f5f8;
+    border-radius: 0.25rem;
+    border-color: transparent;
+    letter-spacing: 0.1rem;
+}
+select{
+    background: #f1f5f8;
+    border-radius: 0.25rem;
+    border-color: transparent;
+    padding: 0.25rem;
+}
+button.circle-color{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.product-name{
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+ul.paginationBttns{
+    display: flex;
+    justify-content: center;
+    li{
+        margin: 0 15px;
+        padding: 5px 10px;
+       a{
+           text-decoration: none;
+           color: black;
+       }
+       &.paginationActive{
+           background-color: #16A5E1;
+           border-radius: 8px;
+           a{
+                color: white;
+           }
+       }
+       &.paginationDisabled{
+           opacity: 0.4;
+           cursor: not-allowed;
+       }
+    }
+}
+hr{
+    flex: 1 1;
+    border-color: #ccc transparent transparent transparent;
+    margin: 1rem 5rem;
+    opacity: 0.6;
+}
+p.three-line-paragraph{
+    display: block; /* Fallback trong trường hợp trình duyệt không hỗ trợ display dạng box */
+    display: -webkit-box;
+    line-height: 16px; /* Fallback  */
+    max-height: 74px; /* Fallback số dòng bạn muốn giới hạn */
+    -webkit-line-clamp: 2; /* Số dòng bạn muốn giới hạn */
+    -webkit-box-orient: vertical;
+    visibility: visible;
+    text-overflow: ellipsis;
+    overflow:hidden;
+   
+}
+button{
+    &.btn-detail{
+    letter-spacing: 2px;
+    font-size: 1rem;
+    background: rgb(224, 240, 79);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: max-content;
+    font-size: 10px;
+    color: black;
+        &:hover{
+            background-color:rgb(149, 160, 56) ;
+            color: white;
+        }
+    }
+    &.btn-filter{
+        letter-spacing: 2px;
+        font-size: 1rem;
+        background: red;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        width: max-content;
+        font-size: 10px;
+    }
+    &.btn-addCart{
+        background-color: white;
+        border: 1px solid gray; 
+        border-radius: 13px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    &.btn-addCart-row{
+        cursor: pointer;
+        background-color: #eaded7;
+        border-radius: 0.5rem;
+        border: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 1rem;
+        color: #795744;
+        text-transform: capitalize;
+        font-weight: 500;
+        margin-top: 8px;
+        &:hover{
+           
+            background-color: #ab7a5f;
+            color: white;
+        }
+    }
+    &.btn-addCart-column{
+        cursor: pointer;
+        background-color:#ab7a5f ;
+        color: white;
+        font-size: 10px;
+        &:hover{
+            background-color: #795744;
+        }
+    }   
+}
+.activeAll{
+    border-bottom: 1px solid black;
+}
+}
